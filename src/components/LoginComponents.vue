@@ -63,6 +63,7 @@ height: 100%;
 }
 .btn {
     width: 370px;
+    margin: 0;
 }
   .gradient-custom-3 {
 /* fallback for old browsers */

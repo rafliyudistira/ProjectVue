@@ -1,44 +1,43 @@
 <template>
-    <div>
-      <div class="wrapper p-3">
-        <!-- Sidebar  -->
-        <nav id="sidebar" class="sidebar border-left-warning shadow p-3" style="border-radius: 25px;">
-            <div class="sidebar-header gradient-custom-3" style="border-radius: 25px;">
-                <h3>E-KTP APP</h3>
-            </div>
 
-            <ul class="list-unstyled components">
-                <li class="active">
-                    <router-link to="home" data-toggle="collapse" aria-expanded="false" class=""><img class="bi bi-house-heart" src="../assets/img/house-heart.svg">Home</router-link>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                    </ul>
-                </li>
-                <li>
-                    <router-link to="/Addkk">Tambah KK</router-link>
-                </li>
-                 <li>
-                    <router-link to="/Detailkk">Detail KK</router-link>
-                </li>
-                <li>
-                    <router-link to="/" data-toggle="collapse" aria-expanded="false" class="">Sign Out</router-link>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group ms-3 mt-2">
+                            
+                                <h5>Selamat datang di aplikasi E-KTP</h5>
+                                <!-- <button class="btn btn-primary w-30">LogOut</button> -->
+                        </div>
+                    </form>
+
+                   
+
+                </nav>
+                <!-- End of Topbar -->
+
+               
+
+          
+          
 
 
-    </div>
-    </div>
 </template>
 
 <script>
 export default {
-        name : "SideBarComponents"
+    name : "NavbarComponents",
 }
 </script>
 
-<style scoped>
+<style>
 /*
     DEMO STYLE
 */
@@ -92,7 +91,6 @@ a:focus {
     border-radius: 0;
     margin-bottom: 40px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-
 }
 
 .navbar-btn {
@@ -230,15 +228,11 @@ a.article:hover {
         display: none;
     }
 }
-.sidebar {
-    height: 757px;
-}
-.backgroundcol {
-    background-color: rgb(255, 255, 255);
-}
-.bi {
-    height: 50px;
-    margin-right: 10px;
-    margin-bottom: 10px;
+.navbar {
+    width: 146vh;
+    border-radius: 20px;
+    margin-top: 20px;
+    height: 70px;
+    margin-left: 20px;
 }
 </style>

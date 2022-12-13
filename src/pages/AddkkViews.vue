@@ -3,8 +3,7 @@
         <SideBarComponents></SideBarComponents>
         <div>
         <NavbarComponents></NavbarComponents>
-        <BoxComponents></BoxComponents>
-        <TableComponents></TableComponents>
+        <AddkkComponents></AddkkComponents>
         </div>
     </div>
 </template>
@@ -12,16 +11,14 @@
 <script>
 import SideBarComponents from "../components/SideBarComponents.vue"
 import NavbarComponents from "../components/NabvarComponents.vue"
-import BoxComponents from "../components/BoxComponents"
-import TableComponents from "../components/TableComponents.vue"
+import AddkkComponents from "../components/AddkkComponents.vue"
 
 export default {
     name : "HomeViews",
     components : {
         SideBarComponents,
         NavbarComponents,
-        BoxComponents,
-        TableComponents,
+        AddkkComponents,
     }
 
 }
